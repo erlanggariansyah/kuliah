@@ -1,7 +1,4 @@
-# kuliah
-Repo untuk tugas perkuliahan
+# Kuliah, DDP
+Repo untuk Tugas Perkuliahan
 
-"Write code, make things better"
 Erlangga Riansyah, 1TI18
-
-STTTNF
