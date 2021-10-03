@@ -64,3 +64,7 @@ function calculator() {
 
 // jalankan function
 calculator();
+
+
+// Erlangga Riansyah, 1TI18
+// Dasar-dasar pemrograman, STT Terpadu Nurul Fikri
