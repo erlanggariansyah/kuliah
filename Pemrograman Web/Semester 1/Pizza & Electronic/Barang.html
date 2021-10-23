@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Barang</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body style="margin-left: 30px; margin-right: 30px;">
+    <nav style="border-color: black; background-color: grey; border: 10px;">
+        <div style="margin-left: 60px; margin-right: 60px;">
+
+        <div style="display: flex;">
+            <a href="#">
+            <p>Home</p>
+        </a>
+            <hr>
+            <a href="#">
+            <p>Generate Link</p>
+            </a>
+            <hr>
+            <a href="#">
+            <p>Transaction History</p>
+            </a>
+            <hr>
+            <a href="#">
+            <p>Policy</p>
+            </a>
+            <hr>
+            <a href="#">
+            <p>Logout</p>
+            </a>
+        </div>
+    </div>
+    </nav>
+
+    <main style="margin-top: 20px;">
+        
+        <div style="display: flex;">
+            <div>
+                <img src="data:image/png;base64,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" alt="example" width=400 height=450>
+                <br>
+                <input type="file" name="avaar" id="file">
+            </div>
+
+            <div>
+                <div>
+                <label for="tt">Title   :</label>
+                <input type="text" name="tt" id="tt">
+                </div>
+                <br>
+                <div style="display: flex;">
+                    <p style="margin: 0;">Description   :   </p>
+                    <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+                </div>
+<br>
+                <div>
+                    <label for="accn">Account Number   :</label>
+                    <input type="number" name="accn" id="accn">
+                </div>
+                <br>
+                <div>
+                    <label for="bank">Bank  : </label>
+                    <select name="bank" id="bank">
+                        <option value="HSBC" selected>HSBNC</option>
+                        <option value="Mandiri">Mandiri</option>
+                        <option value="BCA">BCA</option>
+                    </select>
+                </div>
+<br>
+                <div>
+                    <label for="achttung">Account Holder   :</label>
+                    <input type="text" name="achttung" id="achttung">
+                </div>
+                <br>
+                <div>
+                    <label for="transaction">Transaction    :   </label>
+                    <select name="tr" id="transaction">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <p>*if the transaction is for 3 person choose 3 from the drop-down list</p>
+                    <div style="margin-left: 10px;">
+                        <input checked type="checkbox" id="mp" value="true">
+                        <label for="mp">Send to Mobile Phone</label>
+                        <br>
+                        <input checked type="checkbox" id="mp1" value="true">
+                        <label for="mp1">Send to Email</label>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <label for="achtting">Send to Mobile Phone  :</label>
+                    <input type="text" name="achtting" id="achtting">
+                </div>
+                <br>
+                <div>
+                    <label for="achttes">Send to Email   :</label>
+                    <input type="text" name="achttes" id="achttes">
+                </div>
+                <br>
+                <div>
+                <button style="background-color: green;" type="submit">Generate Nabr Link</button>
+            </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
