@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 6.3</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box; 
+    }
+
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 0;
+        background-color: gray;
+    }
+
+    #main {
+        display: flex;
+        flex: 1;
+    }
+
+    #main > div {
+        flex: 1;
+        order: 1;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+        background-color: red;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #main > aside {
+        background: pink;
+        flex: 0 0 20vw;
+        order: 0;
+    }
+
+    header, footer {
+        background: khaki;
+        height: 20vh;
+    }
+
+    header, footer, article,aside {
+        padding: 1em;
+    }
+
+    aside {
+        margin-left: 20px;
+    }
+
+    header {
+        margin: 20px;
+    }
+
+    footer {
+        margin: 20px;
+    }
+    
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .like-body {
+        display: flex;
+        min-height: 48vh;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+    }
+
+    .ukuran {
+        width: 130px;
+        height: 130px;
+    }
+    </style>
+<body>
+    <div class="flex">
+        <header>Header</header>
+        <div class="like-body">
+            <div id="main">
+                <div>
+                    <article>Article</article>
+                    <div style="display: flex;">
+                        <div style="margin-right: 20px; border: 1px solid white;">
+                            <img src="https://cdn-cdaac.nitrocdn.com/tFOqLIaMYIaFjSGNUoYXbEDiJHtqbEtH/assets/static/optimized/rev-7fdb227/wp-content/uploads/2014/11/140828132531-01-world-war-ii-0828-horizontal-large-gallery.jpg" alt="ww2" class="ukuran">
+                        </div>
+                        <div style="border: 1px solid white;">
+                            <img src="https://cdn-cdaac.nitrocdn.com/tFOqLIaMYIaFjSGNUoYXbEDiJHtqbEtH/assets/static/optimized/rev-7fdb227/wp-content/uploads/2014/11/140828132531-01-world-war-ii-0828-horizontal-large-gallery.jpg" alt="ww2" class="ukuran">
+                        </div>
+                        <div style="margin-left: 20px; border: 1px solid white;">
+                            <img src="https://cdn-cdaac.nitrocdn.com/tFOqLIaMYIaFjSGNUoYXbEDiJHtqbEtH/assets/static/optimized/rev-7fdb227/wp-content/uploads/2014/11/140828132531-01-world-war-ii-0828-horizontal-large-gallery.jpg" alt="ww2" class="ukuran">
+                        </div>
+                    </div>
+                </div>
+                <aside>Aside</aside>
+            </div>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
