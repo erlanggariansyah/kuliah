@@ -1,0 +1,1894 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Grand Coffee</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <style>
+         /*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+         /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+         @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+         @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+         /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+         2) font-family: 'Poppins', sans-serif;
+         ----------------------------------------*****/
+
+
+         /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+         @import url("https://cdn.jsdelivr.net/npm/icomoon@1.0.0/index.min.js");
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css");
+         @import url("https://github.com/meanthemes/meanMenu/blob/master/meanmenu.css");
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css");
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css");
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css");
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css");
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css");
+         @import url("https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css");
+
+         /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+         * {
+            box-sizing: border-box !important;
+            transition: ease all 0.5s;
+         }
+
+         html {
+            scroll-behavior: smooth;
+         }
+
+         body {
+            color: #666666;
+            font-size: 14px;
+            font-family: Poppins;
+            line-height: 1.80857;
+            font-weight: normal;
+            overflow-x: hidden !important;
+         }
+
+         a {
+            color: #1f1f1f;
+            text-decoration: none !important;
+            outline: none !important;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+         }
+
+         h1,
+         h2,
+         h3,
+         h4,
+         h5,
+         h6 {
+            letter-spacing: 0;
+            font-weight: normal;
+            position: relative;
+            padding: 0 0 10px 0;
+            font-weight: normal;
+            line-height: normal;
+            color: #111111;
+            margin: 0
+         }
+
+         h1 {
+            font-size: 24px
+         }
+
+         h2 {
+            font-size: 22px
+         }
+
+         h3 {
+            font-size: 18px
+         }
+
+         h4 {
+            font-size: 16px
+         }
+
+         h5 {
+            font-size: 14px
+         }
+
+         h6 {
+            font-size: 13px
+         }
+
+         *,
+         *::after,
+         *::before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+         }
+
+         h1 a,
+         h2 a,
+         h3 a,
+         h4 a,
+         h5 a,
+         h6 a {
+            color: #212121;
+            text-decoration: none!important;
+            opacity: 1
+         }
+
+         button:focus {
+            outline: none;
+         }
+
+         ul,
+         li,
+         ol {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+         }
+
+         p {
+            margin: 20px;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 24px;
+         }
+
+         a {
+            color: #222222;
+            text-decoration: none;
+            outline: none !important;
+         }
+
+         a,
+         .btn {
+            text-decoration: none !important;
+            outline: none !important;
+            -webkit-transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+            -ms-transition: all .3s ease-in-out;
+            -o-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+         }
+
+         img {
+            max-width: 100%;
+            height: auto;
+         }
+
+         :focus {
+            outline: 0;
+         }
+
+         .paddind_bottom_0 {
+            padding-bottom: 0 !important;
+         }
+
+         .btn-custom {
+            margin-top: 20px;
+            background-color: transparent !important;
+            border: 2px solid #ddd;
+            padding: 12px 40px;
+            font-size: 16px;
+         }
+
+         .lead {
+            font-size: 18px;
+            line-height: 30px;
+            color: #767676;
+            margin: 0;
+            padding: 0;
+         }
+
+         .form-control:focus {
+            border-color: #ffffff !important;
+            box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+         }
+
+         .navbar-form input {
+            border: none !important;
+         }
+
+         .badge {
+            font-weight: 500;
+         }
+
+         blockquote {
+            margin: 20px 0 20px;
+            padding: 30px;
+         }
+
+         button {
+            border: 0;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+         }
+
+         .full {
+            float: left;
+            width: 100%;
+         }
+
+         .layout_padding {
+            padding-top: 90px;
+            padding-bottom: 0px;
+         }
+
+         /* header section start */
+
+         .header_section {
+            width: 100%;
+            float: left;
+            background-color: #252525;
+            height: auto;
+            background-size: 100%;
+         }
+
+         .bg-light {
+            background-color: transparent !important;
+         }
+
+         .header_main {
+            width: 100%;
+            float: left;
+            background: #10e2bd;
+            height: 80px;
+         }
+
+         .navbar-light .navbar-nav .active>.nav-link,
+         .navbar-light .navbar-nav .nav-link.active,
+         .navbar-light .navbar-nav .nav-link.show,
+         .navbar-light .navbar-nav .show>.nav-link {
+            color: #f76d37;
+         }
+
+         .navbar-light .navbar-nav .nav-link:focus,
+         .navbar-light .navbar-nav .nav-link:hover {
+            color: #f76d37;
+         }
+
+         .navbar {
+            padding: 20px 1rem;
+         }
+
+         .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: .5rem;
+            padding-left: .5rem;
+            font-size: 18px;
+            color: #fff;
+         }
+
+         .logo {}
+
+         /* header section end */
+
+         /* banner section start */
+
+         .banner_section {
+            width: 100%;
+            float: left;
+            background-image: url("https://s4.bukalapak.com/img/4174593833/large/image.jpg");
+            height: auto;
+            background-size: 100%;
+            padding: 10px 0px 25px 0px;
+            background-repeat: no-repeat;
+         }
+
+         .banner_taital {
+            width: 100%;
+            float: left;
+            padding: 100px 0px;
+         }
+
+         .outstanding_text {
+            width: 100%;
+            float: left;
+            font-size: 60px;
+            color: #252525;
+            padding-bottom: 0px;
+         }
+
+         .coffee_text {
+            width: 100%;
+            float: left;
+            font-size: 70px;
+            color: #fdfcfa;
+            font-weight: bold;
+            padding-bottom: 0px;
+         }
+
+         .there_text {
+            width: 50%;
+            float: left;
+            font-size: 16px;
+            color: #fff;
+            margin: 0px;
+            padding-bottom: 30px;
+         }
+
+         .learnmore_bt {
+            width: 170px;
+         }
+
+         .learnmore_bt a {
+            width: 100%;
+            float: left;
+            padding-right: 0;
+            background-color: #252525;
+            color: #fff;
+            text-align: center;
+            margin-right: 12px;
+            height: 53px;
+            padding: 15px 40px;
+            font-size: 14px;
+            text-transform: uppercase;
+         }
+
+         .learnmore_bt a:hover {
+            background-color: #f76d37;
+            color: #fff;
+         }
+
+         #main_slider a.carousel-control-next {
+            left: 0px;
+            right: -60px;
+            top: 440px;
+         }
+
+         #main_slider a.carousel-control-prev {
+            left: -60px;
+            right: 0px;
+            top: 440px;
+         }
+
+         #main_slider .carousel-control-next,
+         #main_slider .carousel-control-prev {
+            width: 45px;
+            height: 45px;
+            background: #fff;
+            opacity: 1;
+            font-size: 30px;
+            color: #333333;
+            margin: 0 auto;
+            z-index: 1;
+            margin: 0 auto;
+            text-align: center;
+         }
+
+         #main_slider .carousel-control-next:focus,
+         #main_slider .carousel-control-next:hover,
+         #main_slider .carousel-control-prev:focus,
+         #main_slider .carousel-control-prev:hover {
+            color: #ffffff;
+            background-color: #f76d37;
+         }
+
+         /* banner section end */
+
+         /* about section start */
+
+         .about_section {
+            width: 100%;
+            float: left;
+         }
+
+         .about_taital_main {
+            width: 100%;
+            float: left;
+            padding: 120px 0px;
+         }
+
+         .about_taital {
+            width: 100%;
+            float: left;
+            font-size: 40px;
+            color: #f76d37;
+            font-weight: bold;
+            text-transform: uppercase;
+         }
+
+         .about_text {
+            width: 100%;
+            float: left;
+            font-size: 16px;
+            color: #4c4c4b;
+            margin: 0px;
+            padding-top: 10px;
+         }
+
+         .about_text {
+            width: 100%;
+            float: left;
+            font-size: 16px;
+            color: #4c4c4b;
+            margin: 0px;
+            padding-top: 10px;
+         }
+
+         .read_bt {
+            width: 175px;
+            float: left;
+            padding-top: 40px;
+         }
+
+         .read_bt a {
+            width: 100%;
+            float: left;
+            font-size: 18px;
+            background-color: #252525;
+            color: #ffffff;
+            text-align: center;
+            padding: 8px;
+         }
+
+         .read_bt a:hover {
+            color: #ffffff;
+            background-color: #f76d37;
+         }
+
+         /* about section end */
+
+         /* gallery section start */
+
+         .gallery_section {
+            width: 100%;
+            float: left;
+            padding-bottom: 90px;
+         }
+
+         .gallery_taital {
+            width: 100%;
+            float: left;
+            text-align: center;
+            font-size: 40px;
+            color: #f76d37;
+            font-weight: bold;
+         }
+
+         .gallery_text {
+            width: 100%;
+            float: left;
+            font-size: 16px;
+            text-align: center;
+            margin: 0px;
+            padding-top: 20px;
+            color: #262525;
+         }
+
+         .gallery_section_2 {
+            width: 100%;
+            float: left;
+            padding-top: 50px;
+         }
+
+         .image {
+            display: block;
+            width: 100%;
+            height: auto;
+         }
+
+         img.image {
+            min-height: 300px;
+         }
+
+         .container_main {
+            position: relative;
+         }
+
+         .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgb(254, 230, 220, 0.6);
+            margin: 0 auto;
+         }
+
+         .container_main:hover .overlay {
+            opacity: 1;
+         }
+
+         .text {
+            color: white;
+            font-size: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 80%;
+            text-align: center;
+         }
+
+         .seemore_bt {
+            width: 170px;
+            margin: 0 auto;
+            text-align: center;
+            display: flex;
+         }
+
+         .seemore_bt a {
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #252525;
+            padding: 10px 0px;
+            margin-top: 40px;
+         }
+
+         .seemore_bt a:hover {
+            background-color: #f76d37;
+            color: #ffffff;
+         }
+
+         a:hover {
+            color: #f76d37;
+            text-decoration: underline;
+         }
+
+         /* gallery section end */
+
+         /* services section start */
+
+         .services_section {
+            width: 100%;
+            float: left;
+            background-image: url("https://s4.bukalapak.com/img/4174593833/large/image.jpg");
+            height: auto;
+            padding-bottom: 100px;
+            background-attachment: fixed;
+         }
+
+         .services_taital {
+            width: 100%;
+            float: left;
+            font-size: 40px;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+         }
+
+         .services_text {
+            width: 100%;
+            float: left;
+            font-size: 16px;
+            color: #ffffff;
+            margin: 0px;
+            text-align: center;
+         }
+
+         .house_icon {
+            width: 200px;
+            height: auto;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+         }
+
+         .house_icon img {
+            width: 45px;
+            min-height: 50px;
+         }
+
+         .box_main .house_icon .image_2 {
+            display: none;
+         }
+
+         .box_main:hover .house_icon .image_2 {
+            display: block;
+         }
+
+         .box_main:hover .house_icon .image_1 {
+            display: none;
+         }
+
+         .box_main:hover {
+            background-color: #ffffff;
+         }
+
+         .box_main {
+            width: 100%;
+            background-color: #f76d37;
+            padding: 40px 30px;
+            box-shadow: 0px 0px 18px -6px;
+         }
+
+         .box_main:hover .decorate_text {
+            color: #000;
+         }
+
+         .box_main:hover .tation_text {
+            color: #000;
+         }
+
+         .box_main:hover .readmore_bt {
+            display: block;
+         }
+
+         .box_main:hover .readmore_bt a {
+            color: #ffffff;
+            background-color: #000;
+         }
+
+         .services_section_2 {
+            width: 100%;
+            float: left;
+            padding-top: 50px;
+         }
+
+         .decorate_text {
+            width: 100%;
+            font-size: 28px;
+            color: #ffffff;
+            padding-top: 30px;
+            text-align: center;
+         }
+
+         .tation_text {
+            width: 100%;
+            font-size: 14px;
+            color: #ffffff;
+            margin: 0px;
+            text-align: center;
+         }
+
+         .readmore_bt {
+            width: 175px;
+            padding-top: 40px;
+            margin: 0 auto;
+            display: flex;
+            display: none;
+            padding-bottom: 40px;
+         }
+
+         .readmore_bt a {
+            width: 100%;
+            float: left;
+            font-size: 18px;
+            background-color: #070603;
+            color: #ffffff;
+            text-align: center;
+            padding: 8px;
+            text-transform: uppercase;
+         }
+
+         .readmore_bt a:hover {
+            color: #ffffff;
+            background-color: #f76d37;
+         }
+
+         /* services section end */
+
+         /* client section start */
+
+         .client_section {
+            width: 100%;
+            float: left;
+         }
+
+         .client_taital {
+            width: 100%;
+            float: left;
+            font-size: 40px;
+            color: #f76d37;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+         }
+
+         .client_text {
+            width: 100%;
+            font-size: 16px;
+            color: #252525;
+            margin: 0 auto;
+         }
+
+         .client_section_2 {
+            width: 100%;
+            float: left;
+            margin-top: 50px;
+            padding-bottom: 100px;
+         }
+
+         .testimonial_section_2 {
+            width: 100%;
+            float: left;
+            padding: 0px 40px 30px 40px;
+            position: relative;
+         }
+
+         .testimonial_section_2::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 150px;
+            border-top: 3px solid #252525;
+            border-left: 3px solid #252525;
+            top: 12px;
+            left: 0px;
+            right: initial;
+         }
+
+         .testimonial_section_2::before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 150px;
+            border-bottom: 3px solid #252525;
+            border-right: 3px solid #252525;
+            top: 12px;
+            left: initial;
+            right: 0px;
+         }
+
+         .client_name_text {
+            width: 100%;
+            float: left;
+            font-size: 24px;
+            color: #f76d37;
+            text-transform: uppercase;
+            padding-left: 100px;
+            font-weight: bold;
+         }
+
+         .quick_icon {
+            text-align: right;
+            padding-left: 30px;
+         }
+
+         .customer_text {
+            width: 100%;
+            float: left;
+            font-size: 16px;
+            color: #252525;
+            margin: 0px;
+         }
+
+         .carousel-indicators li {
+            position: relative;
+            -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+            width: 55px;
+            height: 18px;
+            margin-right: 3px;
+            margin-left: 3px;
+            text-indent: -999px;
+            background-color: #252525;
+            border-radius: 20px;
+         }
+
+         .carousel-indicators {
+            bottom: 0px;
+         }
+
+         .carousel-indicators .active {
+            background-color: #f76d37;
+         }
+
+         /* client section end */
+
+         /* contact section start */
+
+         .contact_section {
+            width: 100%;
+            float: left;
+         }
+
+         .contact_text {
+            width: 100%;
+            float: left;
+            font-size: 40px;
+            text-align: center;
+            color: #f76d37;
+            font-weight: bold;
+         }
+
+         .contact_section_2 {
+            width: 100%;
+            float: left;
+         }
+
+         .mail_section {
+            width: 100%;
+            float: left;
+            background-image: url("https://s4.bukalapak.com/img/4174593833/large/image.jpg");
+            height: auto;
+            padding: 23px 70px;
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+
+         .long_text {
+            width: 52%;
+            margin: 0 auto;
+            font-size: 16px;
+            text-align: center;
+            color: #b2afaf;
+            padding-top: 30px;
+            display: flex;
+         }
+
+         .email_text {
+            width: 100%;
+            float: left;
+            margin-top: 20px;
+         }
+
+         .email-bt {
+            color: #080707;
+            width: 100%;
+            height: 55px;
+            font-size: 20px;
+            padding: 20px 40px;
+            border: 0px;
+            border-radius: 30px;
+         }
+
+         .massage-bt {
+            color: #080707;
+            width: 100%;
+            height: 150px;
+            font-size: 20px;
+            padding: 40px;
+            border: 0px;
+            border-radius: 50px;
+         }
+
+         .send_btn {
+            width: 170px;
+            margin: 0 auto;
+            text-align: center;
+         }
+
+         .main_bt a {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 16px;
+            color: #ffffff;
+            background-color: #d33a11;
+            padding: 15px 50px 12px 50px;
+            border-radius: 30px;
+            display: block;
+         }
+
+         .main_bt a {
+            color: #ffffff;
+            background-color: #d33a11;
+         }
+
+         .main_bt a:hover {
+            color: #323131;
+            background-color: #ffffff;
+         }
+
+         .padding_0 {
+            padding: 0px;
+         }
+
+         /* contact section end */
+
+         /* footer section start */
+
+         .footer_section {
+            width: 100%;
+            float: left;
+            background-color: #252525;
+            height: auto;
+            padding: 95px 0px;
+         }
+
+         .useful_text {
+            width: 100%;
+            font-size: 24px;
+            color: #ffffff;
+            margin-bottom: 15px;
+            font-weight: bold;
+         }
+
+         .footer_text {
+            width: 100%;
+            float: left;
+            font-size: 14px;
+            color: #ffffff;
+            margin: 0px;
+         }
+
+         .footer_menu {
+            width: 100%;
+            float: left;
+         }
+
+         .footer_menu ul {
+            margin: 0px;
+            padding: 0px;
+         }
+
+         .footer_menu li {
+            font-size: 14px;
+            color: #ffffff;
+         }
+
+         .footer_menu li a {
+            color: #ffffff;
+         }
+
+         .footer_menu li a:hover {
+            color: #f76d37;
+         }
+
+         .dummy_text {
+            width: 30%;
+            float: left;
+            font-size: 14px;
+            color: #ffffff;
+            margin: 0px;
+         }
+
+         .location_text {
+            width: 100%;
+            float: left;
+         }
+
+         .location_text ul {
+            margin: 0px;
+            padding: 0px;
+         }
+
+         .location_text li {
+            font-size: 14px;
+            color: #ffffff;
+            padding: 0px 0px 5px 0px;
+         }
+
+         .location_text li a {
+            color: #ffffff;
+         }
+
+         .location_text li a:hover {
+            color: #f76d37;
+         }
+
+         .padding_left_10 {
+            padding-left: 10px;
+         }
+
+
+         /* footer section end */
+
+         /* copyright section start */
+
+         .copyright_section {
+            width: 100%;
+            float: left;
+            background-color: #ffffff;
+            height: auto;
+         }
+
+         .copyright_text {
+            width: 100%;
+            float: left;
+            font-size: 16px;
+            color: #252525;
+            text-align: center;
+            margin-left: 0px;
+         }
+
+         .copyright_text a {
+            color: #252525;
+         }
+
+         .copyright_text a:hover {
+            color: #f76d37;
+         }
+
+
+         /* copyright section end */
+
+         .margin_top90 {
+            margin-top: 90px;
+         }
+      </style>
+      <style>
+         /*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+         /*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+         @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .header-search {
+               padding: 15px 0px;
+            }
+         }
+
+
+         /*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
+
+         @media only screen and (min-width: 599px) and (max-width: 767px) {
+            .logo {
+               text-align: center;
+            }
+            .cart-content-right {
+               padding-bottom: 5px;
+            }
+            .mg {
+               margin: 0px 0px;
+            }
+            .menu-area-main {
+               height: 256px;
+               overflow-y: auto;
+            }
+            .megamenu>.row [class*="col-"] {
+               padding: 0px;
+            }
+            .menu-area-main .megamenu .men-cat {
+               padding: 0px 15px;
+            }
+            .menu-area-main .megamenu .women-cat {
+               padding: 0px 15px;
+            }
+            .menu-area-main .megamenu .el-cat {
+               padding: 0px 15px;
+            }
+            .mean-container .mean-nav ul li a.mean-expand {
+               height: 19px;
+            }
+            .category-box.women-box {
+               display: none;
+            }
+            .cart-box {
+               display: inline-block;
+               margin: 0px 30px;
+            }
+            .wish-box {
+               float: none;
+               margin: 0px 30px;
+               display: inline-block;
+            }
+            .menu-add {
+               display: none;
+            }
+            .category-box {
+               display: none;
+            }
+            .mean-container .mean-nav ul li ol {
+               padding: 0px;
+            }
+            .mean-container .mean-nav ul li a {
+               padding: 10px 20px;
+               width: 94.8%;
+            }
+            .mean-container .mean-nav ul li li a {
+               width: 92%;
+               padding: 1em 4%;
+            }
+            .mean-container .mean-nav ul li li li a {
+               width: 100%;
+            }
+            .header-search {
+               padding: 15px 0px;
+            }
+            #collapseFilter.d-md-block {
+               padding: 30px 0px;
+            }
+         }
+
+
+         /*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
+
+         @media only screen and (min-width: 280px) and (max-width: 599px) {
+            .cart-content-right {
+               padding-bottom: 5px;
+            }
+            .megamenu>.row [class*="col-"] {
+               padding: 0px;
+            }
+            .menu-area-main .megamenu .men-cat {
+               padding: 0px 15px;
+            }
+            .menu-area-main .megamenu .women-cat {
+               padding: 0px 15px;
+            }
+            .menu-area-main .megamenu .el-cat {
+               padding: 0px 15px;
+            }
+            .mean-container .mean-nav ul li a {
+               padding: 1em 4%;
+               width: 92%;
+            }
+            .mean-container .mean-nav ul li li a {
+               width: 90%;
+               padding: 1em 5%;
+            }
+            .mean-container .sub-full.megamenu-categories ol li a {
+               padding: 5px 0px;
+               text-transform: capitalize;
+               width: 100%;
+            }
+            .megamenu .sub-full.megamenu-categories .women-box .banner-up-text a {
+               width: auto;
+               border: none;
+               float: none;
+            }
+            .menu-area-main {
+               height: 45px;
+               overflow-y: auto;
+            }
+            .mean-container .mean-nav ul li a.mean-expand {
+               top: 0;
+            }
+         }
+
+         @media (min-width: 992px) and (max-width: 1199px) {
+            #main_slider a.carousel-control-prev {
+               top: 95%;
+            }
+            #main_slider a.carousel-control-next {
+               top: 95%;
+            }
+            .banner_taital {
+               padding: 20px 0px;
+            }
+            .banner_section {
+               background-size: 100% 100%;
+               padding: 50px 0px;
+            }
+            .about_taital_main {
+               padding: 60px 0px;
+            }
+            .mail_section {
+               padding: 23px 20px;
+            }
+            .decorate_text {
+               font-size: 26px;
+            }
+         }
+
+         @media (min-width: 768px) and (max-width: 991px) {
+            #main_slider a.carousel-control-prev {
+               top: 90%;
+            }
+            #main_slider a.carousel-control-next {
+               top: 90%;
+            }
+            .navbar {
+               padding: 20px 0px;
+            }
+            .logo {
+               width: 50%;
+            }
+            .navbar-toggler {
+               background-color: #fff;
+               border: 1px solid #fff;
+            }
+            .navbar-expand-lg .navbar-nav .nav-link {
+               text-align: center;
+            }
+            .banner_section {
+               background-size: 100% 100%;
+            }
+            .outstanding_text {
+               font-size: 50px;
+            }
+            .coffee_text {
+               font-size: 60px;
+            }
+            .there_text {
+               width: 60%;
+               font-size: 14px;
+            }
+            .about_taital_main {
+               padding: 31px 0px;
+            }
+            .about_text {
+               font-size: 14px;
+            }
+            .about_img {
+               margin-top: 30px;
+            }
+            .gallery_text {
+               font-size: 14px;
+            }
+            img.image {
+               min-height: 210px;
+            }
+            .box_main {
+               margin-top: 20px;
+            }
+            .mail_section {
+               padding: 23px 15px;
+            }
+            .footer_section {
+               padding: 50px 0px;
+            }
+            .useful_text {
+               padding-top: 20px;
+            }
+            .box_main {
+               padding: 40px 5px;
+            }
+            .container_main {
+               margin-top: 30px;
+            }
+            .gallery_section_2 {
+               padding-top: 0;
+            }
+            .testimonial_section_2 {
+               padding: 0px 0px 30px 0px;
+            }
+            .testimonial_section_2::before {
+               height: 200px;
+            }
+            .testimonial_section_2::after {
+               height: 200px;
+            }
+            .customer_text {
+               font-size: 14px;
+               padding: 0px 30px;
+            }
+            .client_name_text {
+               padding-left: 130px;
+            }
+            .client_section_2 {
+               padding-bottom: 50px;
+            }
+            .decorate_text {
+               font-size: 22px;
+            }
+         }
+
+         @media (min-width: 576px) and (max-width: 767px) {
+            #main_slider a.carousel-control-prev {
+               top: 90%;
+            }
+            #main_slider a.carousel-control-next {
+               top: 90%;
+            }
+            .navbar {
+               padding: 20px 0px;
+            }
+            .logo {
+               width: 50%;
+            }
+            .navbar-toggler {
+               background-color: #fff;
+               border: 1px solid #fff;
+            }
+            .navbar-expand-lg .navbar-nav .nav-link {
+               text-align: center;
+            }
+            .banner_section {
+               background-size: 100% 100%;
+            }
+            .outstanding_text {
+               font-size: 30px;
+            }
+            .coffee_text {
+               font-size: 40px;
+            }
+            .there_text {
+               width: 100%;
+               font-size: 14px;
+            }
+            .about_taital_main {
+               padding: 0px;
+            }
+            .about_text {
+               font-size: 14px;
+            }
+            .about_img {
+               margin-top: 30px;
+            }
+            .gallery_text {
+               font-size: 14px;
+            }
+            .box_main {
+               margin-top: 20px;
+            }
+            .mail_section {
+               padding: 23px 15px;
+            }
+            .footer_section {
+               padding: 50px 0px;
+            }
+            .useful_text {
+               padding-top: 20px;
+            }
+            .container_main {
+               margin-top: 30px;
+            }
+            .gallery_section_2 {
+               padding-top: 0;
+            }
+            .testimonial_section_2 {
+               padding: 0px 0px 30px 0px;
+            }
+            .testimonial_section_2::before {
+               display: none;
+            }
+            .testimonial_section_2::after {
+               display: none;
+            }
+            .client_name_text {
+               padding-left: 0px;
+            }
+            .customer_text {
+               font-size: 14px;
+            }
+            .client_section_2 {
+               padding-bottom: 50px;
+            }
+         }
+
+         @media (max-width: 575px) {
+            #main_slider a.carousel-control-prev {
+               top: 90%;
+            }
+            #main_slider a.carousel-control-next {
+               top: 90%;
+            }
+            .navbar {
+               padding: 20px 0px;
+            }
+            .logo {
+               width: 50%;
+            }
+            .navbar-toggler {
+               background-color: #fff;
+               border: 1px solid #fff;
+            }
+            .navbar-expand-lg .navbar-nav .nav-link {
+               text-align: center;
+            }
+            .banner_section {
+               background-size: 100% 100%;
+            }
+            .outstanding_text {
+               font-size: 30px;
+            }
+            .coffee_text {
+               font-size: 40px;
+            }
+            .there_text {
+               width: 100%;
+               font-size: 14px;
+            }
+            .about_taital_main {
+               padding: 0px;
+            }
+            .about_text {
+               font-size: 14px;
+            }
+            .about_img {
+               margin-top: 30px;
+            }
+            .gallery_text {
+               font-size: 14px;
+            }
+            .box_main {
+               margin-top: 20px;
+            }
+            .mail_section {
+               padding: 23px 15px;
+            }
+            .footer_section {
+               padding: 50px 0px;
+            }
+            .useful_text {
+               padding-top: 20px;
+            }
+            .container_main {
+               margin-top: 30px;
+            }
+            .gallery_section_2 {
+               padding-top: 0;
+            }
+            .testimonial_section_2 {
+               padding: 0px 0px 30px 0px;
+            }
+            .testimonial_section_2::before {
+               display: none;
+            }
+            .testimonial_section_2::after {
+               display: none;
+            }
+            .client_name_text {
+               padding-left: 0px;
+            }
+            .customer_text {
+               font-size: 14px;
+            }
+            .client_section_2 {
+               padding-bottom: 50px;
+            }
+         }
+      </style>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js" integrity="sha512-Yk47FuYNtuINE1w+t/KT4BQ7JaycTCcrvlSvdK/jry6Kcxqg5vN7/svVWCxZykVzzJHaxXk5T9jnFemZHSYgnw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!--header section start -->
+      <div class="header_section">
+         <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <div class="logo"><a href="#"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEjrZgrLF8EWA8zXMmTyc6j32_x0cnb8YIBQLSZ2uZq0RAxRZERkGm61prOFIfjgw-Syk2Rt7HruhTOaZ20qRiUJfVzzAkg2wc74f7-vnAD6QOs4vTP8a3K18fl7jYBQQXTwfIYAWFHsycV_5TbOBLriOPo2VwTNWNsZSSy7UdIwY0dBjV2mf_N4YsLz"></a></div>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="#">Beranda</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#galeri">Galeri</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#layanan">Layanan</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak Kami</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!--header section end -->
+      <!-- banner section start -->
+      <div class="banner_section layout_padding">
+         <div class="container">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="banner_taital">
+                              <h1 class="outstanding_text">Estetika</h1>
+                              <h1 class="coffee_text">Dimulai dari dirimu</h1>
+                              <p class="there_text">Grand Coffe membantu dirimu menemukan estetika dalam diri</p>
+                              <div class="learnmore_bt"><a href="#">Pesan</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="banner_taital">
+                              <h1 class="outstanding_text">Dirimu yang sebenarnya</h1>
+                              <h1 class="coffee_text">Adalah kamu yang sudah memilih jalan</h1>
+                              <p class="there_text">Karena pilihan adalah wujud dari masa depan</p>
+                              <div class="learnmore_bt"><a href="#">Pesan</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="banner_taital">
+                              <h1 class="outstanding_text">Grande Coffe</h1>
+                              <h1 class="coffee_text">Memberikan Solusi</h1>
+                              <p class="there_text">Dengan memberikan kopi yang nyaman di hati</p>
+                              <div class="learnmore_bt"><a href="#">Pesan</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <i class="fa fa-angle-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i class="fa fa-angle-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- banner section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div id="tentang" class="col-md-6">
+                  <div class="about_taital_main">
+                     <div class="about_taital">Tentang Kami</div>
+                     <p class="about_text">Grand Coffe merupakan sebuah anak perusahaan dari Grande Coffe yang merupakan anggota Erlan Group.</p>
+                     <p class="about_text">Grand Coffe telah dipercaya oleh jutaan masyarakat Indonesia dengan menghadirkan secangkir kopi nikmat yang cocok untuk diminum dikala senja dan gundah.</p>
+                     <div class="read_bt"><a href="#">Pesan</a></div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img"><img src="https://cf.shopee.co.id/file/005f78f8618024bf8b0b05ca15d9ba43"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
+      <!-- gallery section start -->
+      <div class="gallery_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div id="galeri" class="col-sm-12">
+                  <h1 class="gallery_taital">Galeri Kita</h1>
+                  <p class="gallery_text">Potret estetik dari Grand Coffe</p>
+               </div>
+            </div>
+            <div class="">
+               <div class="gallery_section_2">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="https://p4.wallpaperbetter.com/wallpaper/496/851/672/cup-coffee-steam-hot-wallpaper-preview.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="https://p4.wallpaperbetter.com/wallpaper/496/851/672/cup-coffee-steam-hot-wallpaper-preview.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="https://p4.wallpaperbetter.com/wallpaper/496/851/672/cup-coffee-steam-hot-wallpaper-preview.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="gallery_section_2">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="https://p4.wallpaperbetter.com/wallpaper/496/851/672/cup-coffee-steam-hot-wallpaper-preview.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="https://p4.wallpaperbetter.com/wallpaper/496/851/672/cup-coffee-steam-hot-wallpaper-preview.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="overlay">
+                                 <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="https://p4.wallpaperbetter.com/wallpaper/496/851/672/cup-coffee-steam-hot-wallpaper-preview.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="overlay">
+                                 <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="gallery_section_2">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="https://p4.wallpaperbetter.com/wallpaper/496/851/672/cup-coffee-steam-hot-wallpaper-preview.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="https://p4.wallpaperbetter.com/wallpaper/496/851/672/cup-coffee-steam-hot-wallpaper-preview.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="container_main">
+                           <img src="https://p4.wallpaperbetter.com/wallpaper/496/851/672/cup-coffee-steam-hot-wallpaper-preview.jpg" alt="Avatar" class="image">
+                           <div class="overlay">
+                              <div class="text"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="seemore_bt"><a href="#">Perbanyak</a></div>
+         </div>
+      </div>
+      <!-- gallery section end -->
+      <!-- services section start -->
+      <div class="services_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div id="layanan" class="col-sm-12">
+                  <h1 class="services_taital">List Kopi</h1>
+                  <p class="services_text">Grand Coffe mempersembahkan</p>
+               </div>
+            </div>
+            <div class="services_section_2">
+               <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main active">
+                        <div class="house_icon">
+                           <img src="https://png.pngtree.com/png-clipart/20190925/original/pngtree-coffee-mug-icon-png-image_4985544.jpg" class="image_1">
+                           <img src="https://png.pngtree.com/png-clipart/20190925/original/pngtree-coffee-mug-icon-png-image_4985544.jpg" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Original Coffee</h3>
+                        <p class="tation_text">Kopi original khas Grand Coffe yang sulit kamu lupakan</p>
+                        <div class="readmore_bt"><a href="#">Pesan</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main">
+                        <div class="house_icon">
+                           <img src="https://png.pngtree.com/png-clipart/20190925/original/pngtree-coffee-mug-icon-png-image_4985544.jpg" class="image_1">
+                           <img src="https://png.pngtree.com/png-clipart/20190925/original/pngtree-coffee-mug-icon-png-image_4985544.jpg" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Grand Armee Coffee</h3>
+                        <p class="tation_text">Kopi nikmat yang bikin kamu nostalgia ke zaman Napoleon</p>
+                        <div class="readmore_bt"><a href="#">Pesan</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main">
+                        <div class="house_icon">
+                           <img src="https://png.pngtree.com/png-clipart/20190925/original/pngtree-coffee-mug-icon-png-image_4985544.jpg" class="image_1">
+                           <img src="https://png.pngtree.com/png-clipart/20190925/original/pngtree-coffee-mug-icon-png-image_4985544.jpg" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Extra Grand Coffe</h3>
+                        <p class="tation_text">Grand Armee dengan tambahan topping diatasnya</p>
+                        <div class="readmore_bt"><a href="#">Pesan</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- services section end -->
+      <!-- testimonial section start -->
+      <div class="client_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="client_taital">Dokumentasi Video</h1>
+                  <p class="client_text">Video pembuatan kopi di Grand Coffe</p>
+               </div>
+            </div>
+         </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="client_section_2">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="testimonial_section_2">
+                            <h4 class="client_name_text">Grand Coffe #1</h4>
+                            <p class="customer_text">Lihat video <a href="https://www.youtube.com/watch?v=2cZCVNQwd3w">disini</a></p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_section_2">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="testimonial_section_2">
+                            <h4 class="client_name_text">Grand Coffe #2</h4>
+                            <p class="customer_text">Lihat video <a href="https://www.youtube.com/watch?v=2cZCVNQwd3w">disini</a></p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_section_2">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="testimonial_section_2">
+                            <h4 class="client_name_text">Grand Coffe #3</h4>
+                            <p class="customer_text">Lihat video <a href="https://www.youtube.com/watch?v=2cZCVNQwd3w">disini</a></p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+     <!-- HERE -->
+
+
+     <div class="client_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <h1 class="client_taital">Harga</h1>
+               <p class="client_text">Tabel Harga</p>
+            </div>
+         </div>
+         <table class="table">
+            <tr>
+               <th>Nama Kopi</th>
+               <th>Harga</th>
+            </tr>
+            <tr>
+               <td>
+                  Grande Armee
+               </td>
+               <td>
+                  50000
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  original
+               </td>
+               <td>
+                  10000
+               </td>
+            </tr>
+            <tr>
+               <td>Extra</td>
+               <td>90000</td>
+            </tr>
+         </table>
+      </div>
+     </div>
+   </div>
+  </div>
+
+      <!-- testimonial section end -->
+      <!-- contact section start -->
+      <div class="contact_section layout_padding">
+         <div id="kontak" class="container">
+            <h1 class="contact_text">Hubungi / Berikan kami komentar</h1>
+         </div>
+      </div>
+      <div class="contact_section_2 layout_padding">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-6 padding_0">
+                  <div class="mail_section">
+                     <div class="email_text">
+                        <div class="form-group">
+                           <input type="text" class="email-bt" placeholder="Nama" name="Email">
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="email-bt" placeholder="Email" name="Email">
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="email-bt" placeholder="Nomor Handphone" name="Email">
+                        </div>
+                        <div class="form-group">
+                           <textarea class="massage-bt" placeholder="Pesan dan kesan" rows="5" id="comment" name="Massage"></textarea>
+                        </div>
+                        <div class="send_btn">
+                           <div type="text" class="main_bt"><a href="#">KIRIM!</a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 padding_0">
+                  <div class="map-responsive">
+                     <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="508" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6">
+                  <h3 class="useful_text">Tentang</h3>
+                  <p class="footer_text">Grand Coffe merupakan sebuah anak perusahaan dari Grande Coffe yang merupakan anggota Erlan Group.</p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h3 class="useful_text">Menu</h3>
+                  <div class="footer_menu">
+                     <ul>
+                        <li><a href="#">Beranda</a></li>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Galeri</a></li>
+                        <li><a href="#">Layanan</a></li>
+                        <li><a href="#">Kontak</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="useful_text">Part of</h1>
+                  <p class="dummy_text">Grande Coffe by Erlan Group</p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="useful_text">Sosial Media</h1>
+                  <div class="location_text">
+                     <ul>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-facebook" aria-hidden="true"></i><span class="padding_left_10">Grand Coffe</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-instagram" aria-hidden="true"></i><span class="padding_left_10">@grandcoffee</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">grandcoffee@erlangga.eu.org</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2021 All Rights Reserved.</p>
+         </div>
+      </div>   
+   </body>
+</html>
