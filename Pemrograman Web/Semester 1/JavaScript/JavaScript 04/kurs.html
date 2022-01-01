@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Rupiah</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <label for="f1">Masukkan Nilai</label>
+        <input type="number" name="f1" id="f1">
+        <label for="valas">Valas</label>
+        <select name="valas" id="valas" onchange="kurs(this);">
+            <option value="USD">Dollar US</option>
+            <option value="SGD">Dollar Singapore</option>
+            <option value="RM">Ringgit Malaysia</option>
+            <option value="YEN">Yen Japan</option>
+            <option value="EUR">Euro</option>
+            <option value="RYL">Riyal Arab Saudi</option>
+        </select>
+        <label for="f2">Nilai Rupiah</label>
+        <input type="number" name="f2" id="f2" disabled>
+    </fieldset>
+</body>
+<script>
+    function kurs(obj) {
+        f1 = document.getElementById("f1").value;
+        v = obj.value;
+        switch (v) {
+            case 'USD':
+                result = f1 * 9915;
+                document.getElementById("f2").value = result;
+                break;
+            case 'SGD':
+                result = f1 * 13472;
+                document.getElementById('f2').value = result;
+                break;
+            case 'RM':
+                result = f1 * 874;
+                document.getElementById('f2').value = result;
+                break;
+            case 'YEN':
+                result = f1 * 120;
+                document.getElementById('f2').value = result;
+                break;
+            case 'EUR':
+                result = f1 * 15888;
+                document.getElementById('f2').value = result;
+                break;
+            case 'RYL':
+                result = f1 * 3592;
+                document.getElementById('f2').value = result;
+                break;
+            default:
+        }
+    }
+</script>
+</html>

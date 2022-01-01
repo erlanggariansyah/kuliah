@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Validation</legend>
+        <form>
+            <label for="nmp">Nama Pelanggan</label>
+            <input type="text" name="nmp" id="nmp">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <label for="jamk">Jam Keberangkatan</label>
+            <input type="time" name="jamk" id="jamk">
+
+            <label for="tujuan">Tujuan Keberangkatan</label>
+            <input type="text" name="tujuan" id="tujuan">
+
+            <label for="jmlt">Jumlah Tiket</label>
+            <input type="number" name="jmlt" id="jmlt">
+
+            <button type="submit" onclick="a();">Kirim</button>
+        </form>
+    </fieldset>
+
+    <p id="nmph"></p>
+    <p id="emailh"></p>
+    <p id="jamkh"></p>
+    <p id="tujuanh"></p>
+    <p id="jmlth"></p>
+</body>
+<script>
+    function a() {
+        if (document.getElementById("nmp").value == null) {
+            alert('Nama Pelanggan Kosong!');
+            document.getElementById("nmp").style.borderColor = "red";
+        }
+    }
+</script>
+</html>

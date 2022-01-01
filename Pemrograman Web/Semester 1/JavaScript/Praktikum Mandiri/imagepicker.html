@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <h1>Image Picker</h1>
+    <select name="img" id="img" onchange="imgpick(event);">
+        <option value="Naruto">Naruto</option>
+        <option value="Sasuke">Sasuke</option>
+        <option value="Konohamaru">Konohamaru</option>
+        <option value="Itachi">Itachi</option>
+        <option value="Lancelot">Lancelot</option>
+    </select>
+    <br>
+    <br>
+    <img id="a" src="https://cdn0-production-images-kly.akamaized.net/lXZnpWL6cEhEgrlmZKb2Uz6WIAI=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3488932/original/008102000_1624278462-Mobile_Legends_11.jpg" alt="img">
+</body>
+<script>
+    imgpick = function (event) {
+  if (event.target.value == "Naruto")
+  {
+    document.getElementById("a").src = "https://asset-a.grid.id/crop/85x11:892x513/700x465/photo/2021/05/28/mobile-legends-bang-bangjpg-20210528042158.jpg";
+    alert("mobile-legends-bang-bangjpg-20210528042158.jpg")
+} else if (event.target.value == "Sasuke") {
+    document.getElementById("a").src = "https://i.pinimg.com/originals/4d/ff/51/4dff5187487c05e5742b4139209789cd.jpg";
+    alert("4dff5187487c05e5742b4139209789cd.jpg");
+  } else if (event.target.value == "Konohamaru") {
+      document.getElementById("a").src = "https://awsimages.detik.net.id/community/media/visual/2020/03/16/410c64a0-90c6-428f-9028-a80084e9a26a_43.png?w=700&q=90";
+        alert("410c64a0-90c6-428f-9028-a80084e9a26a_43.png");
+    } else if (event.target.value == "Itachi") {
+    document.getElementById("a").src = "https://img.okezone.com/content/2020/09/20/16/2280677/bikin-kuat-hero-game-mobile-legends-ini-caranya-xNcm9PjJ2I.jpg";
+    alert("bikin-kuat-hero-game-mobile-legends-ini-caranya-xNcm9PjJ2I.jpg");
+  } else if (event.target.value == "Lancelot") {
+    document.getElementById("a").src = "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1635398699/etltndehizunnt1vwrs3.jpg";
+    alert("etltndehizunnt1vwrs3.jpg");
+  }
+}
+</script>
+</html>

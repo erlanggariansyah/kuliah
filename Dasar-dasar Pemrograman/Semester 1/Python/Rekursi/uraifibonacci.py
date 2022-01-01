@@ -4,9 +4,9 @@ def fibonacci(param):
         
     else:
         return (fibonacci(int(param) - 1) + fibonacci(int(param) - 2))
-
-
-param = input("Masukkan batas deret: ")
+        
+param 
+= input("Masukkan batas deret: ")
 n = 1
 
 print("Deret fibonacci: ", fibonacci(param))

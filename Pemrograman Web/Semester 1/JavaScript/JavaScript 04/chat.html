@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Chat</legend>
+        <p id="chat-set"></p>
+        <input type="text" name="message" id="msg" style="width: 95%;">
+        <button onclick="chat();">Kirim</button>
+    </fieldset>
+</body>
+<script>
+    let c = [];
+    function chat() {
+        let a = document.getElementById('msg').value;
+        let d = [a];
+        c.push(a);
+        console.log(c);
+        document.getElementById('chat-set').innerHTML = c.join('<br/>');
+    }
+</script>
+</html>
