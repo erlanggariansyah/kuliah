@@ -1,7 +1,7 @@
 from datetime import date
 import datetime
 
-# membutuhkan library python-dateutil
+# membutuhkan package python-dateutil
 from dateutil.relativedelta import relativedelta
 
 class Orang:
