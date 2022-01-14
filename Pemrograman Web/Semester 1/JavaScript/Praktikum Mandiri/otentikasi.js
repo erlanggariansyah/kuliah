@@ -7,7 +7,9 @@ function login() {
 
     if (un == uname && pw == password) {
         let a = confirm('Login sukses!');
+        return true;
     } else {
         alert('Login gagal');
+        return false;
     }
 }
