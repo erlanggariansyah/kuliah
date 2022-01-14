@@ -14,9 +14,21 @@
             <input type="text" name="uname" id="uname">
             <label for="pw">Password</label>
             <input type="password" name="pw" id="pw">
-            <button onclick="login();">Login</button>
+            <button id="click-a">Login</button>
         </form>
     </fieldset>
 </body>
 <script src="otentikasi.js"></script>
+<script>
+    let a = document.getElementById("click-a");
+
+    a.addEventListener("click", function() {
+        let b = login();
+
+        if (b) {
+            alert("woy");
+            window.location.href = "/sukses.html";
+        }
+    });
+</script>
 </html>
