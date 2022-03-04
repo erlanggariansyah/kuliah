@@ -1,6 +1,6 @@
 <?php 
 
-class murid {
+class Murid {
     private $nama;
     private $nilai;
 
@@ -26,21 +26,10 @@ class murid {
     }
 }
 
-class Reza extends murid {
-}
-$reza = new Reza('reza', 70);
-
-class Ciut extends murid {
-}
-$ciut = new Ciut('ciut', 63);
-
-class Dian extends murid {
-}
-$dian = new Dian('dian', 80);
-
-class Badu extends murid {
-}
-$badu = new Badu('badu', 40);
+$reza = new Murid('reza', 70);
+$ciut = new Murid('ciut', 63);
+$dian = new Murid('dian', 80);
+$badu = new Murid('badu', 40);
 
 $hasil_akhir = [$reza, $ciut, $dian, $badu];
 
