@@ -16,7 +16,7 @@ public class duplikatMain {
     public static void main(String[] args) {
         String[] parameter = new String[5];
         for (int i = 0; i < 5; i++) {
-            parameter[i] = String.valueOf("Index ke-"+i);
+            parameter[i] = String.valueOf("Index ke-" + i);
         }
 
         duplikat(parameter);
