@@ -1,1 +1,1 @@
-# Tidak ada praktikum
+# Tidak ada tugas praktikum
