@@ -2,7 +2,7 @@
  * Fungsi untuk menampilkan hasil download
  * @param {string} result - Nama file yang didownload
  */
-const showDownload = (result) => {
+ const showDownload = (result) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       Math.random() < 0.5 ? resolve(result) : reject("Download Gagal.");
