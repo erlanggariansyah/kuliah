@@ -1,9 +1,11 @@
 package com.bigdata.crudmongodb.service;
 
+import com.bigdata.crudmongodb.data.StudentRaw;
 import com.bigdata.crudmongodb.model.Student;
 import com.bigdata.crudmongodb.repository.StudentRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -20,18 +22,21 @@ public class StudentService {
         return repository.findById(id).orElse(null);
     }
 
+    @Transactional
     public void insert(Student student) {
         repository.insert(student);
     }
 
+    @Transactional
     public void delete(Student student) {
         repository.delete(student);
     }
 
-    public void update(Student student, Student newStudent) {
-        student.setEmail(newStudent.getEmail());
-        student.setFirstName(newStudent.getFirstName());
-        student.setLastName(newStudent.getLastName());
+    @Transactional
+    public void update(Student student, StudentRaw newStudent) {
+        student.setEmail(newStudent.getStudent().getEmail());
+        student.setFirstName(newStudent.getStudent().getFirstName());
+        student.setLastName(newStudent.getStudent().getLastName());
         repository.save(student);
     }
 }

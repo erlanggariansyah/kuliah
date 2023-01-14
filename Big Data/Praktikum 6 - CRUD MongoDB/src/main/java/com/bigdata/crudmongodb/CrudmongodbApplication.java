@@ -1,5 +1,6 @@
 package com.bigdata.crudmongodb;
 
+import com.bigdata.crudmongodb.data.StudentRaw;
 import com.bigdata.crudmongodb.model.Student;
 import com.bigdata.crudmongodb.repository.StudentRepository;
 import org.springframework.boot.CommandLineRunner;

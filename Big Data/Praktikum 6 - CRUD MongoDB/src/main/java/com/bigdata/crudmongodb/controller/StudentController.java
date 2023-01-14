@@ -1,5 +1,6 @@
 package com.bigdata.crudmongodb.controller;
 
+import com.bigdata.crudmongodb.data.StudentRaw;
 import com.bigdata.crudmongodb.model.Student;
 import com.bigdata.crudmongodb.service.StudentService;
 import lombok.AllArgsConstructor;
@@ -56,8 +57,10 @@ public class StudentController {
     ) {
         Student student = service.getById(id);
         Student newStudent = new Student(null, firstName, lastName, email, null);
+        StudentRaw studentRaw = StudentRaw.getInstance();
+        studentRaw.setStudent(newStudent);
 
-        service.update(student, newStudent);
+        service.update(student, studentRaw);
         return ResponseEntity.ok(new HashMap<>(){{put("status", "success");}});
     }
 }
