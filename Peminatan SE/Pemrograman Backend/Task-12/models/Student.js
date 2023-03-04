@@ -35,6 +35,17 @@ class Student {
             })
         })
     }
+
+    static async find(id) {
+        return new Promise((resolve, reject) => {
+            const query = "SELECT * FROM students WHERE id = " + id;
+
+            db.query(query, (e, r) => {
+                const [ student ] = r;
+                resolve(student);
+            })
+        });
+    }
 }
 
 module.exports = Student;

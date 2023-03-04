@@ -37,6 +37,21 @@ class StudentController {
     res.json(data);
   }
 
+  async show (req, res) {
+    const student = await Student.find(req.params.id);
+
+    if (student) {
+      res.status(200).json({
+        message: "Menampilkan detail students",
+        data: student
+      })
+    } else {
+      res.status(404).json({
+        message: "Student not found"
+      })
+    }
+  }
+
   update(req, res) {
     const { id } = req.params;
     const { nama } = req.body;
