@@ -10,11 +10,6 @@
 	flex-direction: column;
 }
 
-.navbar__link {
-	text-decoration: none;
-	color: #fff;
-}
-
 .navbar__brand {
 	font-size: 2.4 rem;
 	margin-bottom: 1 rem;
@@ -26,19 +21,15 @@
 	list-style: none;
 }
 
-.navbar_list {
-	justify-content: center;
-}
-
 .navbar__item {
-	padding: 2%;
+	margin-bottom: 1 rem;
 }
 
 /* Medium Screen */
 @media(min-width: 768px) {
 	.navbar {
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space - between;
 		align-items: center;
 	}
 

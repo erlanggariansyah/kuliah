@@ -1,6 +1,6 @@
 /* Small Screen */
 .container {
-	background-color: #06D6A0;
+  background-color: #06D6A0;
   padding: 1rem;
   color: #fff;
 }
@@ -8,6 +8,11 @@
 .navbar {
 	display: flex;
 	flex-direction: column;
+}
+
+.navbar__link {
+	text-decoration: none;
+	color: #fff;
 }
 
 .navbar__brand {
@@ -21,15 +26,19 @@
 	list-style: none;
 }
 
+.navbar_list {
+	justify-content: center;
+}
+
 .navbar__item {
-	margin-bottom: 1 rem;
+	padding: 2%;
 }
 
 /* Medium Screen */
 @media(min-width: 768px) {
 	.navbar {
 		flex-direction: row;
-		justify-content: space - between;
+		justify-content: space-between;
 		align-items: center;
 	}
 

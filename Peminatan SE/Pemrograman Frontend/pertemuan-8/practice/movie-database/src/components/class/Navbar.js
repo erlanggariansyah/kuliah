@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 class Navbar extends React.Component {    
     render() {
-        const { container, navbar, navbar__brand, navbar__list, navbar__item, navbar__link, navbar_list } = styles;
+        const { container, navbar, navbar__brand, navbar__list, navbar__item } = styles;
 
         return (
             <div className={container}>
@@ -12,22 +12,22 @@ class Navbar extends React.Component {
                     <div>
                         <h1 className={navbar__brand}>Movie App</h1>
                     </div>
-                    <div className={navbar_list}>
+                    <div>
                         <ul className={navbar__list}>
                             <li className={navbar__item}>
-                                <Link className={navbar__link} to="/">Home</Link>
+                                <Link to="/">Home</Link>
                             </li>
                             <li className={navbar__item}>
-                                <Link className={navbar__link} to="/movie/add">Add Movie</Link>
+                                <Link to="/movie/add">Add Movie</Link>
                             </li>
                             <li className={navbar__item}>
-                                <Link className={navbar__link} to="/movie/popular">Popular</Link>
+                                <Link to="/movie/popular">Popular</Link>
                             </li>
                             <li className={navbar__item}>
-                                <Link className={navbar__link} to="/movie/playing">Now Playing</Link>
+                                <Link to="/movie/playing">Now Playing</Link>
                             </li>
                             <li className={navbar__item}>
-                                <Link className={navbar__link} to="/movie/rated">Top Rated</Link>
+                                <Link to="/movie/rated">Top Rated</Link>
                             </li>
                         </ul>
                     </div>

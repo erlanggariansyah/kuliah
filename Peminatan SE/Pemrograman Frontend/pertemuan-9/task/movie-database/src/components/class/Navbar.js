@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "../../styles/Navbar.module.css"
+import { Link } from "react-router-dom";
 
 class Navbar extends React.Component {    
     render() {
-        const { container, navbar, navbar__brand, navbar__list, navbar__item } = styles;
+        const { container, navbar, navbar__brand, navbar__list, navbar__item, navbar__link, navbar_list } = styles;
 
         return (
             <div className={container}>
@@ -11,13 +12,23 @@ class Navbar extends React.Component {
                     <div>
                         <h1 className={navbar__brand}>Movie App</h1>
                     </div>
-                    <div>
+                    <div className={navbar_list}>
                         <ul className={navbar__list}>
-                            <li className={navbar__item}>Home</li>
-                            <li className={navbar__item}>Add Movie</li>
-                            <li className={navbar__item}>Popular</li>
-                            <li className={navbar__item}>Now Playing</li>
-                            <li className={navbar__item}>Top Rated</li>
+                            <li className={navbar__item}>
+                                <Link className={navbar__link} to="/">Home</Link>
+                            </li>
+                            <li className={navbar__item}>
+                                <Link className={navbar__link} to="/movie/add">Add Movie</Link>
+                            </li>
+                            <li className={navbar__item}>
+                                <Link className={navbar__link} to="/movie/popular">Popular</Link>
+                            </li>
+                            <li className={navbar__item}>
+                                <Link className={navbar__link} to="/movie/playing">Now Playing</Link>
+                            </li>
+                            <li className={navbar__item}>
+                                <Link className={navbar__link} to="/movie/rated">Top Rated</Link>
+                            </li>
                         </ul>
                     </div>
                 </nav>
