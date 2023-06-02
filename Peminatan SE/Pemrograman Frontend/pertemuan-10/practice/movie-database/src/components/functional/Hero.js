@@ -1,8 +1,9 @@
 import styles from "../../styles/Hero.module.css"
 import { useState, useEffect } from "react"
+import Button from "./Button";
 
 const Hero = () => {
-    const { container, hero, hero__left, hero__right, hero__title, hero__image, hero__button, hero__genre, hero__description } = styles;
+    const { container, hero, hero__left, hero__right, hero__title, hero__image, hero__genre, hero__description } = styles;
 
     const [movieHero, setMovieHero] = useState("")
     useEffect(() => {
@@ -18,11 +19,9 @@ const Hero = () => {
     }, [])
 
     const description = <p className={hero__description}>{movieHero.Plot}</p>
-    const button = <button className={hero__button}>Watch</button>
+    const button = <Button>Watch</Button>
     const title = <h2 className={hero__title}>{movieHero.Title}</h2>
     const genre = <h2 className={hero__genre}>{movieHero.Genre}</h2>
-
-    console.log(movieHero)
 
     return (
         <div className={container}>
