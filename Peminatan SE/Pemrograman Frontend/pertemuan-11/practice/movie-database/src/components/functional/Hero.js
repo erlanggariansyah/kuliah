@@ -36,8 +36,6 @@ const Hero = () => {
     const title = <h2 className={hero__title}>{movieHero.Title}</h2>
     const genre = <h2 className={hero__genre}>{movieHero.Genre}</h2>
 
-    console.log(movieHero)
-
     return (
         <div className={container}>
             <section className={hero}>
