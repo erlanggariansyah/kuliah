@@ -1,10 +1,8 @@
-import styles from "../../styles/Navbar.module.css"
+import StyledNavbar from "../../styled/Navbar.styled";
 
 const Navbar = () => {
-    const { container, navbar, navbar__brand, navbar__list, navbar__item } = styles;
-
     return (
-        <div className={container}>
+        <StyledNavbar>
             <nav className={navbar}>
                 <div>
                     <h1 className={navbar__brand}>Movie App</h1>
@@ -19,7 +17,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </nav>
-        </div>
+        </StyledNavbar>
     )
 }
 

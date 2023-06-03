@@ -1,14 +1,14 @@
-import style from "../../styles/Movie.module.css";
+import StyledMovie from "../../styled/Movie.styled";
 
 const Movie = (props) => {
     const { poster, title, year } = props.movie;
 
     return (
-        <div className={style.movie}>
-                <img className={style.movie__image} src={poster} alt={title} />
-                <h3 className={style.movie__title}>{title}</h3>
-                <p className={style.movie__date}>{year}</p>
-        </div>
+        <StyledMovie>
+                <img src={poster} alt={title} />
+                <h3>{title}</h3>
+                <p>{year}</p>
+        </StyledMovie>
     )
 }
 
